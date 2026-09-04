@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ネクサス・トラスト | 確かな技術と信頼</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="header-inner">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                ネクサス・トラスト
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="index.html" >ホーム</a></li>
+                    <li><a href="business.html" >事業内容</a></li>
+                    <li><a href="about.html" >会社概要</a></li>
+                    <li><a href="contact.html" class="active">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn-contact-header pc-only">ご相談はこちら</a>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="page-header js-fade-up">
+        <div class="page-header-inner"><h1>お問い合わせ</h1><p>Contact</p></div>
+    </div>
+    <div class="breadcrumb js-fade-up">
+        <ul><li><a href="index.html">ホーム</a></li><li>&gt;</li><li>お問い合わせ</li></ul>
+    </div>
+
+    <section class="flow-section js-fade-up">
+        <div class="contact-container">
+            <div class="section-title">
+                <h2>家づくりの流れ</h2>
+                <p class="subtitle">How to Build</p>
+            </div>
+            <div class="flow-steps">
+                <div class="flow-step">
+                    <div class="step-num">STEP 01</div>
+                    <div class="step-content">
+                        <h3>ご相談・ヒアリング</h3>
+                        <p>理想の暮らしやデザイン、ご予算について丁寧にお伺いします。土地探しからのご相談も歓迎です。</p>
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="step-num">STEP 02</div>
+                    <div class="step-content">
+                        <h3>プラン提案・概算見積り</h3>
+                        <p>ヒアリングをもとに、間取りプランと資金計画をご提案いたします。</p>
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="step-num">STEP 03</div>
+                    <div class="step-content">
+                        <h3>ご契約・詳細打ち合わせ</h3>
+                        <p>プランにご納得いただけましたらご契約となります。その後、壁紙や設備などの詳細を決めていきます。</p>
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="step-num">STEP 04</div>
+                    <div class="step-content">
+                        <h3>着工・施工</h3>
+                        <p>地鎮祭を経て、いよいよ着工です。専属の職人が確かな技術で形にしていきます。</p>
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="step-num">STEP 05</div>
+                    <div class="step-content">
+                        <h3>お引き渡し・アフターサポート</h3>
+                        <p>完成した家を厳格に検査し、お引き渡しします。ここからが本当の長いお付き合いの始まりです。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section js-fade-up">
+        <div class="contact-container">
+            <div class="section-title">
+                <h2>お問い合わせ</h2>
+                <p class="subtitle">Contact Form</p>
+            </div>
+            <div class="contact-form-wrapper">
+                <p class="form-lead">家づくりに関するご相談、資料請求などお気軽にお問い合わせください。</p>
+                <form action="#" method="post" class="contact-form">
+                    <div class="form-group">
+                        <label>お名前 <span class="required">必須</span></label>
+                        <input type="text" placeholder="例：建築 太郎" required>
+                    </div>
+                    <div class="form-group">
+                        <label>メールアドレス <span class="required">必須</span></label>
+                        <input type="email" placeholder="例：info@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>電話番号</label>
+                        <input type="tel" placeholder="例：090-1234-5678">
+                    </div>
+                    <div class="form-group">
+                        <label>お問い合わせ内容 <span class="required">必須</span></label>
+                        <select required>
+                            <option value="">選択してください</option>
+                            <option value="consult">家づくりのご相談</option>
+                            <option value="document">資料請求</option>
+                            <option value="other">その他のお問い合わせ</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>メッセージ</label>
+                        <textarea rows="5" placeholder="ご質問やご要望をご自由にご記入ください。"></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn-submit">送信する</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner js-fade-up">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    ネクサス・トラスト
+                </div>
+                <p class="footer-desc">
+                    地域密着の家づくり。安心と信頼の住まいをご提供します。<br>
+                    お客様の理想の暮らしを、確かな技術でカタチにします。
+                </p>
+                <p class="footer-info">住所：〒000-0000 〇〇県〇〇市〇〇町1-2-3</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-buttons">
+                    <a href="index.html" class="btn-footer">ホーム</a>
+                    <a href="business.html" class="btn-footer">事業内容</a>
+                    <a href="about.html" class="btn-footer">会社概要</a>
+                    <a href="contact.html" class="btn-footer gold">お問い合わせ</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NEXUS TRUST All rights reserved.</p>
+        </div>
+    </footer>
+<script src="script.js"></script></body></html>

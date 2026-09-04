@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ネクサス・トラスト | 確かな技術と信頼</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="header-inner">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                ネクサス・トラスト
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="index.html" >ホーム</a></li>
+                    <li><a href="business.html" class="active">事業内容</a></li>
+                    <li><a href="about.html" >会社概要</a></li>
+                    <li><a href="contact.html" >お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn-contact-header pc-only">ご相談はこちら</a>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="page-header js-fade-up">
+        <div class="page-header-inner"><h1>事業内容・施工事例</h1><p>Business & Works</p></div>
+    </div>
+    <div class="breadcrumb js-fade-up">
+        <ul><li><a href="index.html">ホーム</a></li><li>&gt;</li><li>事業内容・施工事例</li></ul>
+    </div>
+
+    <!-- 新設：事業内容セクション -->
+    <section class="business-intro js-fade-up" style="padding: 80px 5%; background-color: #ffffff;">
+        <div class="container" style="max-width: 1000px; margin: 0 auto;">
+            <div class="section-title">
+                <h2>事業内容</h2>
+                <p class="subtitle">Our Services</p>
+            </div>
+            <div class="service-list">
+                <div class="service-item" style="display:flex; gap:40px; margin-bottom: 60px; align-items: center;">
+                    <div class="service-img" style="flex:1;"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="注文住宅" style="border-radius: 8px; width:100%; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"></div>
+                    <div class="service-text" style="flex:1;">
+                        <h3 style="color: var(--color-navy); font-size: 24px; margin-bottom: 15px; border-bottom: 2px solid var(--color-gold); padding-bottom: 10px; display: inline-block;">注文住宅設計・施工</h3>
+                        <p style="color: var(--color-gray); font-size: 15px; line-height: 1.8;">ご家族のライフスタイルに合わせた、完全自由設計の注文住宅を提供します。高気密・高断熱性能を備えたスマートホームから、洗練されたモダンデザインまで、理想の暮らしをカタチにします。</p>
+                    </div>
+                </div>
+                <div class="service-item reverse" style="display:flex; gap:40px; margin-bottom: 60px; align-items: center; flex-direction: row-reverse;">
+                    <div class="service-img" style="flex:1;"><img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80" alt="リフォーム・リノベーション" style="border-radius: 8px; width:100%; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"></div>
+                    <div class="service-text" style="flex:1;">
+                        <h3 style="color: var(--color-navy); font-size: 24px; margin-bottom: 15px; border-bottom: 2px solid var(--color-gold); padding-bottom: 10px; display: inline-block;">リフォーム・リノベーション</h3>
+                        <p style="color: var(--color-gray); font-size: 15px; line-height: 1.8;">住み慣れた家を、さらに快適で安全な空間へ生まれ変わらせます。間取り変更を伴う大規模なリノベーションから、水回りの最新設備へのアップデートまで幅広く対応いたします。</p>
+                    </div>
+                </div>
+                <div class="service-item" style="display:flex; gap:40px; margin-bottom: 60px; align-items: center;">
+                    <div class="service-img" style="flex:1;"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" alt="メンテナンス・修繕" style="border-radius: 8px; width:100%; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"></div>
+                    <div class="service-text" style="flex:1;">
+                        <h3 style="color: var(--color-navy); font-size: 24px; margin-bottom: 15px; border-bottom: 2px solid var(--color-gold); padding-bottom: 10px; display: inline-block;">メンテナンス・修繕</h3>
+                        <p style="color: var(--color-gray); font-size: 15px; line-height: 1.8;">家が建ってからが本当のお付き合いの始まりです。定期点検や外壁塗装、屋根の修繕など、長期的な視野で大切な資産を守り、快適な住環境を維持するサポートを行います。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 下部：施工事例 -->
+    <section class="works-section" style="background-color: var(--color-light-blue);">
+        <div class="works-container">
+            <div class="section-title js-fade-up">
+                <h2>施工実績</h2>
+                <p class="subtitle">Works Gallery</p>
+            </div>
+            
+            <div class="filter-tabs js-fade-up">
+                <button class="filter-btn active" data-filter="all">すべて</button>
+                <button class="filter-btn" data-filter="hiraya">平屋</button>
+                <button class="filter-btn" data-filter="family">二世帯住宅</button>
+                <button class="filter-btn" data-filter="modern">和モダン</button>
+            </div>
+
+            <div class="works-grid">
+                <div class="work-item js-fade-up hiraya" 
+                     data-title="自然と繋がる、開放的な平屋" 
+                     data-client="K様邸 / 延床面積：28坪"
+                     data-desc="大開口の窓から光と風が通り抜ける、開放感あふれる平屋住宅です。無垢の木をふんだんに使用し、家族が自然とリビングに集まる温かい空間を実現しました。"
+                     data-img="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                    <div class="work-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="施工事例">
+                        <div class="work-overlay"><span class="work-category">平屋</span><span class="work-view">View Details</span></div>
+                    </div>
+                    <div class="work-info"><h3>自然と繋がる、開放的な平屋</h3><p>K様邸 / 延床面積：28坪</p></div>
+                </div>
+
+                <div class="work-item js-fade-up family" 
+                     data-title="適度な距離感を保つ二世帯の家" 
+                     data-client="M様邸 / 延床面積：45坪"
+                     data-desc="お互いのプライバシーを尊重しつつ、玄関や中庭を共有することで自然なコミュニケーションが生まれる完全分離型の二世帯住宅です。"
+                     data-img="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                    <div class="work-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="施工事例">
+                        <div class="work-overlay"><span class="work-category">二世帯住宅</span><span class="work-view">View Details</span></div>
+                    </div>
+                    <div class="work-info"><h3>適度な距離感を保つ二世帯の家</h3><p>M様邸 / 延床面積：45坪</p></div>
+                </div>
+
+                <div class="work-item js-fade-up modern" 
+                     data-title="伝統と革新が交差する和モダンの邸宅" 
+                     data-client="S様邸 / 延床面積：35坪"
+                     data-desc="日本の伝統的な格子天井や漆喰の壁を取り入れながら、最新のスマート設備を融合させた洗練された和モダンの邸宅です。"
+                     data-img="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                    <div class="work-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="施工事例">
+                        <div class="work-overlay"><span class="work-category">和モダン</span><span class="work-view">View Details</span></div>
+                    </div>
+                    <div class="work-info"><h3>伝統と革新が交差する和モダンの邸宅</h3><p>S様邸 / 延床面積：35坪</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- モーダルウィンドウ（詳細ポップアップ） -->
+    <div class="modal" id="workModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-img">
+                <img src="" alt="" id="modalImg">
+            </div>
+            <div class="modal-text">
+                <span id="modalClient" class="modal-client"></span>
+                <h2 id="modalTitle"></h2>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-inner js-fade-up">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    ネクサス・トラスト
+                </div>
+                <p class="footer-desc">
+                    地域密着の家づくり。安心と信頼の住まいをご提供します。<br>
+                    お客様の理想の暮らしを、確かな技術でカタチにします。
+                </p>
+                <p class="footer-info">住所：〒000-0000 〇〇県〇〇市〇〇町1-2-3</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-buttons">
+                    <a href="index.html" class="btn-footer">ホーム</a>
+                    <a href="business.html" class="btn-footer">事業内容</a>
+                    <a href="about.html" class="btn-footer">会社概要</a>
+                    <a href="contact.html" class="btn-footer gold">お問い合わせ</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NEXUS TRUST All rights reserved.</p>
+        </div>
+    </footer>
+<script src="script.js"></script></body></html>
