@@ -311,3 +311,37 @@ body{font-family:"Noto Sans JP",sans-serif;letter-spacing:.02em}h1,h2,h3,.logo{f
 .trust-404{min-height:100vh;padding:140px 25px 80px;display:grid;place-items:center;text-align:center;color:#fff;background:linear-gradient(90deg,rgba(12,39,70,.92),rgba(12,39,70,.4)),url("assets/trust-hero.jpg") 62% center/cover}
 .trust-404>div{max-width:760px}.trust-404 small{color:var(--color-gold-light);font-size:10px;font-weight:700;letter-spacing:.22em}.trust-404 strong{display:block;color:rgba(255,255,255,.13);font-family:"Noto Serif JP";font-size:clamp(9rem,26vw,18rem);line-height:.85}.trust-404 h1{margin:25px 0;font-size:clamp(2rem,4vw,3.5rem);line-height:1.55}.trust-404 p{color:rgba(255,255,255,.72);font-size:12px}.trust-404 a{display:inline-block;margin-top:30px;padding:16px 28px;color:var(--color-navy-deep);background:var(--color-gold-light);font-size:12px;font-weight:700}
 @media(max-width:560px){.trust-404{background-position:68% center}.trust-404 strong{font-size:9rem}}
+
+
+/* Improve customer voice card contrast */
+.nexus-voices .network-card {
+  color: var(--color-navy-deep) !important;
+  background: rgba(255,255,255,.96) !important;
+  border: 1px solid rgba(213,189,139,.75) !important;
+  box-shadow: 0 14px 36px rgba(4,20,38,.22) !important;
+}
+
+.nexus-voices .network-card p {
+  color: var(--color-navy-deep) !important;
+  font-weight: 500;
+  line-height: 1.8 !important;
+}
+
+.nexus-voices .network-card .face-icon {
+  color: var(--color-navy) !important;
+  background: var(--color-light-blue) !important;
+  opacity: 1;
+  filter: none;
+}
+
+.nexus-voices .network-card:hover {
+  transform: translateY(-5px) !important;
+  border-color: var(--color-gold-light) !important;
+  box-shadow: 0 20px 45px rgba(4,20,38,.3) !important;
+}
+
+@media (max-width: 900px) {
+  .nexus-voices .network-card {
+    min-height: 135px;
+  }
+}
