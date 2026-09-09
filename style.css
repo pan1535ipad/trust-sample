@@ -345,3 +345,7 @@ body{font-family:"Noto Sans JP",sans-serif;letter-spacing:.02em}h1,h2,h3,.logo{f
     min-height: 135px;
   }
 }
+
+
+/* Japanese responsive typography */
+h1,h2,h3{text-wrap:balance;line-break:strict}p,li,dt,dd,figcaption{text-wrap:pretty;line-break:strict}@supports (word-break:auto-phrase){h1,h2,h3,p,li,dt,dd,figcaption{word-break:auto-phrase}}.sp-line{display:inline}@media(max-width:768px){.sp-line{display:block}}
