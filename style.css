@@ -369,3 +369,14 @@ h1,h2,h3{text-wrap:balance;line-break:strict}p,li,dt,dd,figcaption{text-wrap:pre
 
 /* Meaning-based mobile line breaks — 2026-09-15 */
 @media(max-width:600px){.sp-line{display:block!important}p br{display:block!important}}
+
+
+/* Mobile overflow guard — content must stay inside the viewport. */
+@media(max-width:600px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  main,section,article,div{min-width:0}
+  h1,h2,h3{max-width:100%;white-space:normal!important;overflow-wrap:normal}
+  p,li,dd{max-width:100%;overflow-wrap:anywhere}
+  img,video{display:block;max-width:100%!important;height:auto}
+  .service-detail,.service-detail article,.service-grid,.card,.contact-wrap{max-width:100%;min-width:0}
+}
