@@ -365,3 +365,7 @@ h1,h2,h3{text-wrap:balance;line-break:strict}p,li,dt,dd,figcaption{text-wrap:pre
   .hero h1,.page-hero h1{font-size:clamp(2.35rem,11vw,3.15rem);line-height:1.4}
   .hero p,.lead-text,.section-description{max-width:34rem}
 }
+
+
+/* Meaning-based mobile line breaks — 2026-09-15 */
+@media(max-width:600px){.sp-line{display:block!important}p br{display:block!important}}
