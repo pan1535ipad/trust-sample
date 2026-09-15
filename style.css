@@ -355,3 +355,13 @@ h1,h2,h3{text-wrap:balance;line-break:strict}p,li,dt,dd,figcaption{text-wrap:pre
 .about-page .page-header{background-image:linear-gradient(90deg,rgba(12,39,70,.92),rgba(12,39,70,.4)),url("https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1920&q=82")!important}
 .business-page .page-header{background-image:linear-gradient(90deg,rgba(12,39,70,.92),rgba(12,39,70,.4)),url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=82")!important}
 .contact-page .page-header{background-image:linear-gradient(90deg,rgba(12,39,70,.92),rgba(12,39,70,.4)),url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1920&q=82")!important}
+
+/* Mobile Japanese line-break refinement 2026-09-15 */
+@media(max-width:600px){
+  h1,h2,h3{text-wrap:balance;line-break:strict;overflow-wrap:normal}
+  p,li,dd{line-break:strict;overflow-wrap:anywhere}
+  p br{display:none}
+  h1 br,h2 br,h3 br{display:block}
+  .hero h1,.page-hero h1{font-size:clamp(2.35rem,11vw,3.15rem);line-height:1.4}
+  .hero p,.lead-text,.section-description{max-width:34rem}
+}
