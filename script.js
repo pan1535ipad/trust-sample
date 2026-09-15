@@ -204,3 +204,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+
+/* Keep intentional headline breaks intact on phones, then fit each line. */
+(() => {
+  const phone = window.matchMedia('(max-width: 600px)');
+  const targets = () => document.querySelectorAll('h1:has(br), h2:has(br), h3:has(br)');
+
+  function fitHeadline(el) {
+    el.style.removeProperty('font-size');
+    el.style.removeProperty('white-space');
+    if (!phone.matches) return;
+
+    el.style.whiteSpace = 'nowrap';
+    const available = el.clientWidth;
+    const required = el.scrollWidth;
+    if (!available || required <= available) return;
+
+    const current = parseFloat(getComputedStyle(el).fontSize);
+    el.style.fontSize = Math.max(20, current * available / required * 0.97) + 'px';
+  }
+
+  function fitAllHeadlines() {
+    targets().forEach(fitHeadline);
+  }
+
+  let resizeFrame;
+  window.addEventListener('resize', () => {
+    cancelAnimationFrame(resizeFrame);
+    resizeFrame = requestAnimationFrame(fitAllHeadlines);
+  });
+  window.addEventListener('DOMContentLoaded', fitAllHeadlines);
+  window.addEventListener('load', fitAllHeadlines);
+  document.fonts?.ready.then(fitAllHeadlines);
+})();
