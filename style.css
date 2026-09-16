@@ -7,6 +7,9 @@
     --color-text: #333333;       
     --color-gray: #666666;       
 }
+
+/* Meaning-based mobile line breaks */
+@media(max-width:600px){.sp-line{display:block!important}p br{display:block!important}}
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Noto Sans JP', sans-serif; color: var(--color-text); line-height: 1.6; background-color: #ffffff; overflow-x: hidden; }
 body.is-fixed { overflow: hidden; }
@@ -366,43 +369,6 @@ h1,h2,h3{text-wrap:balance;line-break:strict}p,li,dt,dd,figcaption{text-wrap:pre
   .hero p,.lead-text,.section-description{max-width:34rem}
 }
 
-
-/* Meaning-based mobile line breaks — 2026-09-15 */
 @media(max-width:600px){.sp-line{display:block!important}p br{display:block!important}}
-
-
-/* Mobile overflow guard — content must stay inside the viewport. */
-@media(max-width:600px){
-  html,body{width:100%;max-width:100%;overflow-x:hidden}
-  main,section,article,div{min-width:0}
-  h1,h2,h3{max-width:100%;white-space:normal!important;overflow-wrap:normal}
-  p,li,dd{max-width:100%;overflow-wrap:anywhere}
-  img,video{display:block;max-width:100%!important;height:auto}
-  .service-detail,.service-detail article,.service-grid,.card,.contact-wrap{max-width:100%;min-width:0}
-}
-
-
-/* Final mobile width safety net */
-@media(max-width:600px){
-  *,*::before,*::after{box-sizing:border-box}
-  body{position:relative;overflow-x:clip}
-  main>*{max-width:100%}
-  section>*,article>*,.wrap>*,.container>*{min-width:0;max-width:100%}
-  img,picture,video,iframe{max-width:100%!important}
-  input,select,textarea,button{max-width:100%}
-  table{display:block;max-width:100%;overflow-x:auto}
-}
-
-
-/* Mobile body copy: use the available width; reserve fixed breaks for headings. */
-@media(max-width:600px){
-  p .sp-line,li .sp-line,dd .sp-line{display:inline!important}
-  p{max-width:none;text-wrap:pretty}
-  @supports (word-break:auto-phrase){
-    p,li,dd{word-break:auto-phrase}
-  }
-}
-
-
-/* Do not split technical compound terms across mobile lines. */
-@media(max-width:600px){.keep-word{white-space:nowrap}}
+/* Mobile rule: keep industry terms and compound nouns on one line. */
+@media(max-width:600px){.term-keep{display:inline-block;white-space:nowrap;max-width:100%}}
