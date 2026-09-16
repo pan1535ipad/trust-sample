@@ -445,3 +445,9 @@ p,li,dt,dd,figcaption{text-wrap:pretty;overflow-wrap:break-word;word-break:norma
   .footer-buttons { grid-template-columns: 1fr 1fr; gap: 10px; }
   .btn-footer { padding: 14px 8px; font-size: 14px; }
 }
+
+
+/* Desktop semantic break for the company message. */
+@media(min-width:769px){
+  .trust-pc-title>span{display:inline-block;white-space:nowrap;text-wrap:nowrap}
+}
