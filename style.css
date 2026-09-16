@@ -372,3 +372,10 @@ h1,h2,h3{text-wrap:balance;line-break:strict}p,li,dt,dd,figcaption{text-wrap:pre
 @media(max-width:600px){.sp-line{display:block!important}p br{display:block!important}}
 /* Mobile rule: keep industry terms and compound nouns on one line. */
 @media(max-width:600px){.term-keep{display:inline-block;white-space:nowrap;max-width:100%}}
+
+
+/* Shared Japanese line-breaking rules: preserve phrases without wasting width. */
+html{line-break:strict}
+h1,h2,h3,.lead,.catch,.copy{text-wrap:balance;overflow-wrap:normal;word-break:normal}
+p,li,dt,dd,figcaption{text-wrap:pretty;overflow-wrap:break-word;word-break:normal}
+@supports (word-break:auto-phrase){h1,h2,h3,.lead,.catch,.copy,p,li,dt,dd,figcaption{word-break:auto-phrase}}
