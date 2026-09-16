@@ -402,3 +402,7 @@ h1,h2,h3{text-wrap:balance;line-break:strict}p,li,dt,dd,figcaption{text-wrap:pre
     p,li,dd{word-break:auto-phrase}
   }
 }
+
+
+/* Do not split technical compound terms across mobile lines. */
+@media(max-width:600px){.keep-word{white-space:nowrap}}
