@@ -447,7 +447,7 @@ p,li,dt,dd,figcaption{text-wrap:pretty;overflow-wrap:break-word;word-break:norma
 }
 
 
-/* Desktop semantic break for the company message. */
-@media(min-width:769px){
-  .trust-pc-title>span{display:inline-block;white-space:nowrap;text-wrap:nowrap}
-}
+/* User-defined phrase boundaries on all screen sizes. */
+.phrase-heading{white-space:normal!important;text-wrap:wrap!important;word-break:normal;overflow-wrap:normal;min-width:0}
+.phrase-heading>.phrase-unit{display:inline-block;white-space:nowrap!important;text-wrap:nowrap!important;word-break:normal;overflow-wrap:normal}
+.phrase-heading>wbr{display:inline}

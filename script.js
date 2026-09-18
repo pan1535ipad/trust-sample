@@ -181,7 +181,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 const desc = item.getAttribute('data-desc');
                 const imgSrc = item.getAttribute('data-img');
 
-                modalTitle.textContent = title;
+                const sourceHeading = item.querySelector('.work-info h3');
+                modalTitle.classList.toggle('phrase-heading', !!sourceHeading);
+                if (sourceHeading) {
+                    modalTitle.replaceChildren(...Array.from(sourceHeading.childNodes, node => node.cloneNode(true)));
+                } else {
+                    modalTitle.textContent = title;
+                }
                 modalClient.textContent = client;
                 modalDesc.textContent = desc;
                 modalImg.src = imgSrc;
@@ -228,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
     acceptNode(node) {
       const parent = node.parentElement;
       pattern.lastIndex = 0;
-      return parent && !parent.closest("script,style,textarea,.term-keep") && pattern.test(node.data)
+      return parent && !parent.closest("script,style,textarea,.term-keep,.phrase-heading") && pattern.test(node.data)
         ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
     }
   });
